@@ -26,8 +26,8 @@ beforeAll(async () => {
   adminToken = adminLogin.body.token;
 });
 
-afterAll(() => {
-  db.close();
+afterAll(async() => {
+  await db.close();
 });
 
 
