@@ -8,8 +8,8 @@ describe('Auth API Tests', () => {
     await db.initialize();
   });
 
-  afterAll( () => {
-     db.close(); // IMPORTANT: await to avoid Jest warning
+  afterAll( async () => {
+    await db.close(); // IMPORTANT: await to avoid Jest warning
   });
 
   describe('POST /api/auth/register', () => {
