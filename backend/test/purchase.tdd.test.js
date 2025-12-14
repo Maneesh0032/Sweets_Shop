@@ -17,8 +17,8 @@ beforeAll(async () => {
   token = login.body.token;
 });
 
-afterAll(async () => {
-  await db.close();
+afterAll( () => {
+   db.close();
 });
 
 
